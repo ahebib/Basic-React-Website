@@ -1,9 +1,9 @@
 import './Header.css';
 
-function Header() {
+function Header(props) {
   return (
     <div className="site-header">
-    	Templates
+    	{props.title}
     </div>
   );
 }

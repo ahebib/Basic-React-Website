@@ -8,7 +8,7 @@ import './Index.css';
 
 ReactDOM.render(
   <React.StrictMode>
-  	<Header />
+  	<Header title={'Templates'} />
     <App />
     <Footer />
   </React.StrictMode>,
