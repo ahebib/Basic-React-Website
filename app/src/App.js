@@ -1,11 +1,12 @@
-import GoalList from './GoalList';
+import List from './List';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <h1 className="home-title">React Template</h1>
-      <GoalList />
+      <List type={"to-do"} />
+      <List type={"other"} />
     </div>
   );
 }

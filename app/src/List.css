@@ -1,0 +1,13 @@
+.list {
+  width: 30%;
+  margin: 50px auto;
+}
+
+.list ul li {
+  margin-bottom: 10px;
+}
+
+.list p {
+	font-style: italic;
+	text-align: center;
+}
