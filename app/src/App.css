@@ -1,3 +1,44 @@
-.home-title {
+/***
+	Color Palette
+		Baby Blue: #b1d4e0
+		Blue: #2e8bc0
+		Dark Blue: #0c2d48
+		Midnight Blue: #145da0
+***/
+
+.app-wrapper {
+	max-width: 1300px;
+	width: 100%;
+	min-height: 400px;
+	margin: 0 auto;
+}
+
+.app-wrapper a {
+	color: #145da0;
+	text-decoration: none;
+}
+
+.app-wrapper a:hover {
+	text-decoration: underline;
+	opacity: 0.8;
+}
+
+.page-title {
   text-align: center;
+}
+
+/** Home Page **/
+
+/** Routing Page **/
+.routing-page p {
+	width: 50%;
+	line-height: 1.5em;
+	margin: 0 auto;
+}
+
+.back {
+	display: block;
+	width: 10%;
+	text-align: center;
+	margin: 50px auto;
 }
