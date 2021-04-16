@@ -1,22 +1,49 @@
+.side-menu-button {
+	max-width: 100px;
+	width: 100%;
+	background: #FFF;
+	border: none;
+	padding: 5px;
+	position: absolute;
+	top: 4%;
+	left: 3%;
+	cursor: pointer;
+}
+
 .side-menu {
 	max-width: 300px;
 	width: 100%;
 	height: 100%;
 	background-color: #0c2d48;
+	border-right: 1px solid #FFF;
 	position: fixed;
 	top: 0;
 	left: 0;
 }
 
-.sm-links {
-	width: 35%;
-	list-style: none;
-	margin: 36% auto 0;
+.side-menu.hidden-menu {
+	display: none;
 }
 
-.sm-links a {
+.side-menu.active-menu {
+	display: block;
+}
+
+.sm-links {
+	list-style: none;
+	padding: 0;
+	margin: 36% 0 0;
+}
+
+.sm-links a, .sm-links div {
 	display: block;
 	color: #FFFFFF;
+	text-align: center;
 	text-decoration: none;
 	margin: 10px 0;
+}
+
+.sm-links a:hover, .sm-links div:hover {
+	color: #145da0;
+	cursor: pointer;
 }
