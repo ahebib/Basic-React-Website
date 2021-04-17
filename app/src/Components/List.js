@@ -11,7 +11,7 @@ class List extends React.Component {
 			        <h2>Goals:</h2>
 			        <ul>
 			          <li><i>public</i> and <i>src</i> connections</li>
-			          <li><Link to="/routing">Routing</Link></li>
+			          <li>Set up <Link to="/routing">routing</Link> page</li>
 			        </ul>
 			    </div>
 			)
@@ -21,7 +21,7 @@ class List extends React.Component {
 					<h2>Note:</h2>
 					<ul>
 						<li>Header and Footer are examples of functions</li>
-						<li>List is a example of a class</li>
+						<li>List and side menu are examples of a class</li>
 					</ul>
 				</div>
 			)
