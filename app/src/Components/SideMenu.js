@@ -20,6 +20,7 @@ class SideMenu extends React.Component {
 					<ul className="sm-links">
 						<li><a href="/">Home</a></li>
 						<li><a href="/routing">Routing</a></li>
+						<li><a href="/upcoming-movies">Upcoming Movies</a></li>
 						<li><div onClick={this.toggleMenu.bind(this)}>Close</div></li>
 					</ul>
 					</div>
