@@ -1,0 +1,11 @@
+.movie-list {
+	list-style: none;
+}
+
+.movie-list li {
+	margin: 10px 0;
+}
+
+.movie-list li b {
+	font-weight: 500;
+}

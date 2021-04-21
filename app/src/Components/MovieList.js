@@ -1,5 +1,6 @@
 import React from 'react';
-import MovieData from '../Sample/MovieData';
+import './MovieList.css';
+import MovieData from '../SampleData/MovieData';
 
 class MovieList extends React.Component {
 	constructor(props) {
@@ -12,24 +13,6 @@ class MovieList extends React.Component {
 	}
 
 	componentDidMount() {
-		//make a api call
-		// fetch('')
-		// 	.then(res => res.json())
-		// 	.then(
-		// 		(result) => {
-		// 			this.setState({
-		// 				dataRecieved: true,
-		// 				result: result
-		// 			});
-		// 		},
-		// 		(error) => {
-		// 			this.setState({
-		// 				dataRecieved: true,
-		// 				error: error,
-		// 			});
-		// 		}
-		// 	)
-
 		this.setState({
 			dataRecieved: true,
 			result: MovieData
@@ -44,7 +27,7 @@ class MovieList extends React.Component {
 		} else {
 			if (this.state.result) {
 				return (
-					<div>{this.state.result.map(movie => <div><b>{movie.title}</b>: {movie.releaseDate}</div>)}</div>
+					<ul className="movie-list">{this.state.result.map(movie => <li><b>{movie.title}</b>: {movie.releaseDate}</li>)}</ul>
 				);
 			} else {
 				return (<div><i>No movies found</i></div>)

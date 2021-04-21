@@ -1,5 +1,6 @@
 import React from 'react';
 import './SideMenu.css';
+import menuImage from '../Images/menu_white_36dp.svg';
 
 class SideMenu extends React.Component {
 	constructor(props) {
@@ -14,7 +15,7 @@ class SideMenu extends React.Component {
 	render() {
 		return (
 			<div>
-				<button className="side-menu-button" onClick={this.toggleMenu.bind(this)}>Menu</button>
+				<button className="side-menu-button" onClick={this.toggleMenu.bind(this)}><img src={menuImage} alt="Menu" /></button>
 				<div className={this.state.hidden === 'false' ? 'side-menu active-menu' : 'side-menu hidden-menu'}>
 					<div className="sm-content">
 					<ul className="sm-links">
